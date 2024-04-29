@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: black;
+  padding-block: 30px;
+}
+
+.container {
+  width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  padding-block: 45px;
+  padding-inline: 45px;
+}
+
+/****************************************************************************************************************
+*** Progress Bar ***
+****************************************************************************************************************/
+.progressBar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgray;
+}
+
+.progressBar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 20%;
+  float: left;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.progressBar li div {
+  background-color: lightgray;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+svg {
+  height: 20px;
+  fill: white;
+  color: white;
+}
+
+.progressBar .active {
+  color: #185e73 !important;
+}
+
+.progressBar li.active div {
+  background-color: #185e73;
+}
+
+.progressBar li::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: lightgray;
+  position: absolute;
+  left: 60px;
+  top: 25px;
+  z-index: -1;
+}
+
+.progressBar #confirm::after {
+  width: 0;
+}
+
+.progressBar li.active::before,
+.progressBar li.next::after {
+  background-color: #185e73;
+}
+
+/****************************************************************************************************************
+*** Form, Table and Typography ***
+****************************************************************************************************************/
+table {
+  width: 100%;
+  border-radius: 2px;
+  margin-block: 30px;
+}
+
+table, td, th {
+  border: 1.5px solid lightgray;
+  padding: 0px;
+  border-spacing: 0;
+}
+
+td, th {
+  padding-inline: 10px;
+  padding-block: 10px;
+}
+
+th {
+  width: 250px;
+}
+
+@keyframes fadeIn {
+  from { /* Starting opacity */
+    opacity: 0;
+  }
+  to { /* End opacity */
+    opacity: 1;
+  }
+}
+.form-group {
+  display: none;
+  animation: fadeIn 1s;
+}
+
+.form-group.form-active {
+  display: block;
+}
+
+.form-group.policy ol li {
+  margin-block: 15px;
+}
+.form-group.policy h3 {
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.finished .row {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.finished .row h3 {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: normal;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.row h2 {
+  color: #185e73;
+  font-weight: normal;
+}
+
+.row h3 {
+  color: gray;
+}
+
+.form-step {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.form-control {
+  position: relative;
+  margin: 1rem;
+}
+
+.form-control label {
+  font-size: 13px;
+  position: absolute;
+  height: 19px;
+  padding: 4px 7px;
+  top: -14px;
+  left: 10px;
+  color: #a2a2a2;
+  background-color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  height: 50px;
+}
+
+button {
+  padding: 0.75rem;
+  display: block;
+  text-decoration: none;
+  background-color: #185e73;
+  color: #f3f3f3;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-left: auto;
+  width: 50%;
+  font-size: 15px;
+}
+
+button:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #185e73;
+}
+
+.button-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  margin-top: 45px;
+}
+
+.radio-buttons {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.radio-buttons label {
+  font-size: 16px;
+  color: gray;
+}
+.radio-buttons .cont {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding-block: 0;
+  width: 400px;
+}
+.radio-buttons input {
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 4px;
+  width: unset !important;
+}
+.radio-buttons .container input:checked ~ .checkmark {
+  background-color: #185e73;
+}
+
+label {
+  color: gray;
+}/*# sourceMappingURL=styles.css.map */
