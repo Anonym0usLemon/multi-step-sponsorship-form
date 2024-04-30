@@ -84,7 +84,8 @@ svg {
 }
 
 .progressBar li.active::before,
-.progressBar li.next::after {
+.progressBar li.next::after,
+.postProgressBar li.active::after {
   background-color: #185e73;
 }
 
@@ -201,7 +202,7 @@ input {
   height: 50px;
 }
 
-button {
+button, .button {
   padding: 0.75rem;
   display: block;
   text-decoration: none;
@@ -217,7 +218,7 @@ button {
   font-size: 15px;
 }
 
-button:hover {
+button:hover, .button:hover {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px #185e73;
 }
 

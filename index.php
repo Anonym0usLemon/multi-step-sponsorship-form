@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form method="post" action="" class="container">
+    <form method="post" action="post.php" class="container">
         <ul class="progressBar">
             <li class="active" id="policies">
                 <div>
@@ -52,10 +52,10 @@
             <div class="">
                 <ol type="A">
                     <li>ACI requires the Organization receiving ACI sponsorship to submit this form at least 8 to 10 weeks before the event. This form must be filled out completely and signed by an authorized agent of the Organization. </li>
-                    <li>The Organization receiving ACI sponsorship will include the words "Sponsored by American Color Imaging" or "Sponsored by ACI" along with the ACI logo on all event promotional materials including print, electronic, video production, radio broadcasts, and other media. The ACI logo is available upon request from marketing@acilab.com</li>
+                    <li>The Organization receiving ACI sponsorship will include the words "Sponsored by American Color Imaging" or "Sponsored by ACI" along with the ACI logo on all event promotional materials including print, electronic, video production, radio broadcasts, and other media. The ACI logo is available upon request from <a href="mailto:marketing@acilab.com">marketing@acilab.com</a></li>
                     <li>ACI is not involved with negotiations between the speaker and the Organization receiving ACI sponsorship as it pertains to the total speaking honorarium. This negotiation is strictly between your organization and the speakers. ACI expects the Organization receiving ACI sponsorship to pay the speakers immediately following their presentation.</li>
                     <li><strong>ACI's sponsorship payment will go directly to the Organization</strong> receiving ACI sponsorship, not the speakers</li>
-                    <li>To receive sponsorship money, ACI requests the Organization and receiving sponsorship to submit and electronic invoice to tom.stanley@acilab.com within 30 days after the event, along with an electronic list of all attendees and their contact information. No advance payments will be made.</li>
+                    <li>To receive sponsorship money, ACI requests the Organization and receiving sponsorship to submit and electronic invoice to <a href="mailto:tom.stanley@acilab.com">tom.stanley@acilab.com</a> within 30 days after the event, along with an electronic list of all attendees and their contact information. No advance payments will be made.</li>
                     <li>Sponsorship will be provided in 2 levels, a minimum, and a maximum. The minimum would be the minimum amount of sponsorship ACI would pay in support of the speaker. The maximum will be the maximum amount of sponsorship ACI will pay in support of the speaker when supporting documentation is supplied by the Organization, with the invoice, listing the total number of class attendees along with their contact information and emails. This will follow the General Guidelines for Maximum Sponsorship below</li>
                     <li>ACI reserves the right to withhold or amend sponsorship payment for improper recognition or sponsored speakers and/or the event.</li>
                 </ol>
@@ -92,7 +92,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="button-cont"><button class="next">Next</button></div>
+            <div class="button-cont"><a class="button next">Next</a></div>
         </div>
 
 
@@ -103,40 +103,40 @@
             </div>
             <div class="form-control">
                 <label for="organization-name">Name of Organization</label>
-                <input type="text" id="organization-name">
+                <input type="text" id="organization-name" name="organization-name">
             </div>
             <div class="form-control">
                 <label for="organization-street-address">Organization's Street Address</label>
-                <input type="text" id="organization-street-address">
+                <input type="text" id="organization-street-address" name="organization-street-address">
             </div>
             <div class="form-control">
                 <label for="organization-city">City</label>
-                <input type="text" id="organization-city">
+                <input type="text" id="organization-city" name="organization-city">
             </div>
             <div class="form-control">
                 <label for="organization-state">State</label>
-                <input type="text" id="organization-state">
+                <input type="text" id="organization-state" name="organization-state">
             </div>
             <div class="form-control">
                 <label for="organization-zip">Zip</label>
-                <input type="text" id="organization-zip">
+                <input type="text" id="organization-zip" name="organization-zip">
             </div>
             <div class="form-control">
                 <label for="organization-website">Organization Website</label>
-                <input type="text" id="organization-website">
+                <input type="text" id="organization-website" name="organization-website">
             </div>
             <div class="form-control">
                 <label for="organization-facebook">Organization's Facebook Page</label>
-                <input type="text" id="organization-facebook">
+                <input type="text" id="organization-facebook" name="organization-facebook">
             </div>
             <div class="form-control">
                 <label for="organization-socials">Please list your organization's other social media sites</label>
-                <input type="text" id="organization-socials">
+                <input type="text" id="organization-socials" name="organization-socials">
             </div>
 
             <div class="button-cont">
-                <button class="previous">Previous</button>
-                <button class="next">Next</button>
+                <a class="button previous">Previous</a>
+                <a class="button next">Next</a>
             </div>
         </div>
 
@@ -149,30 +149,30 @@
 
             <div class="form-control">
                 <label for="event-date">Event Date</label>
-                <input type="date" id="event-date">
+                <input type="date" id="event-date" name="event-date">
             </div>
             <div class="form-control">
                 <label for="event-location">Event Location</label>
-                <input type="text" id="event-location">
+                <input type="text" id="event-location" name="event-location">
             </div>
 
             <div class="form-control">
                 <label for="speaker-program-attendees">Number of Attendees to be in the Speaker's Program</label>
-                <input type="text" id="speaker-program-attendees">
+                <input type="text" id="speaker-program-attendees" id="speaker-program-attendees">
             </div>
 
             <div class="radio-buttons">
                 <label for="">Event Type:</label>
                 <label class="cont">In-Person
-                <input type="radio" checked="checked" name="event-type">
+                <input type="radio" checked="checked" name="event-type" value="in-person">
                 <span class="checkmark"></span>
                 </label>
                 <label class="cont">Virtual
-                <input type="radio" name="event-type">
+                <input type="radio" name="event-type" value="virtual">
                 <span class="checkmark"></span>
                 </label>
                 <label class="cont">Pre-recorded
-                <input type="radio" name="event-type">
+                <input type="radio" name="event-type" value="pre-recorded">
                 <span class="checkmark"></span>
                 </label>
             </div>
@@ -180,41 +180,41 @@
             <label for="">Number of attendees projected to attend this event:</label>
             <div class="form-control">
                 <label for="projected-in-person-attendees">In-Person Attendees</label>
-                <input type="text" id="in-person-attendees">
+                <input type="text" id="in-person-attendees" name="in-person-attendees">
             </div>
             <div class="form-control">
                 <label for="projected-virtual-attendees">Virtual Attendees</label>
-                <input type="text" id="virtual-attendees">
+                <input type="text" id="virtual-attendees" name="virtual-attendees">
             </div>
 
             <label for="">Number of attendees to this event in the past:</label>
             <div class="form-control">
                 <label for="past-in-person-attendees">In-Person Attendees</label>
-                <input type="text" id="in-person-attendees">
+                <input type="text" id="in-person-attendees" name="in-person-attendees">
             </div>
             <div class="form-control">
                 <label for="past-virtual-attendees">Virtual Attendees</label>
-                <input type="text" id="virtual-attendees">
+                <input type="text" id="virtual-attendees" name="virtual-attendees">
             </div>
 
             <label for="">What is the cost to attend this event?</label>
             <div class="form-control">
                 <label for="member-cost">Member</label>
-                <input type="text" id="member-cost">
+                <input type="text" id="member-cost" name="member-cost">
             </div>
             <div class="form-control">
                 <label for="non-member-cost">Non Member</label>
-                <input type="text" id="non-member-cost">
+                <input type="text" id="non-member-cost" name="non-member-cost">
             </div>
 
             <div class="radio-buttons">
                 <label for="">Can ACI have a table in the speaker's room?</label>
                 <label class="cont">Yes
-                <input type="radio" checked="checked" name="aci-table-in-speakers-room">
+                <input type="radio" checked="checked" name="aci-table-in-speakers-room" value="yes">
                 <span class="checkmark"></span>
                 </label>
                 <label class="cont">No
-                <input type="radio" name="aci-table-in-speakers-room">
+                <input type="radio" name="aci-table-in-speakers-room" value="no">
                 <span class="checkmark"></span>
                 </label>
             </div>
@@ -222,11 +222,11 @@
             <div class="radio-buttons">
                 <label for="">Is there a trade show with this event?</label>
                 <label class="cont">Yes
-                <input type="radio" checked="checked" name="trade-show">
+                <input type="radio" checked="checked" name="trade-show" value="yes">
                 <span class="checkmark"></span>
                 </label>
                 <label class="cont">No
-                <input type="radio" name="trade-show">
+                <input type="radio" name="trade-show" value="no">
                 <span class="checkmark"></span>
                 </label>
             </div>
@@ -234,59 +234,59 @@
             <label for="">What are the trade show dates and times?</label>
             <div class="form-control">
                 <label for="in-person-trade-show-time">In Person</label>
-                <input type="text" id="in-person-trade-show-time">
+                <input type="date" id="in-person-trade-show-time" name="in-person-trade-show-time">
             </div>
             <div class="form-control">
                 <label for="virtual-trade-show-time">Virtual</label>
-                <input type="text" id="virtual-trade-show-time">
+                <input type="date" id="virtual-trade-show-time" name="virtual-trade-show-time">
             </div>
 
             <label for="">Speaker Information</label>
             <div class="form-control">
                 <label for="speaker-name">Speaker's Name(s)</label>
-                <input type="text" id="speaker-name">
+                <input type="text" id="speaker-name" name="speaker-name">
             </div>
             <div class="form-control">
                 <label for="program-date">Program Date</label>
-                <input type="date" id="program-date">
+                <input type="date" id="program-date" name="program-date">
             </div>
             <div class="form-control">
                 <label for="start-time">Start Time</label>
-                <input type="text" id="start-time">
+                <input type="text" id="start-time" name="start-time">
             </div>
             <div class="form-control">
                 <label for="end-time">End Time</label>
-                <input type="text" id="end-time">
+                <input type="text" id="end-time" name="end-time">
             </div>
 
             <div class="radio-buttons">
                 <label class="cont">In-Person
-                <input type="radio" checked="checked" name="event-type">
+                <input type="radio" checked="checked" name="event-type" value="in-person">
                 <span class="checkmark"></span>
                 </label>
                 <label class="cont">Virtual
-                <input type="radio" name="event-type">
+                <input type="radio" name="event-type" value="virtual">
                 <span class="checkmark"></span>
                 </label>
                 <label class="cont">Pre-recorded
-                <input type="radio" name="event-type">
+                <input type="radio" name="event-type" value="pre-recorded">
                 <span class="checkmark"></span>
                 </label>
             </div>
 
             <div class="form-control">
                 <label for="total-speaker-fees">Total Speaker Fees</label>
-                <input type="text" id="total-speaker-fees">
+                <input type="text" id="total-speaker-fees" name="total-speaker-fees">
             </div>
 
             <div class="radio-buttons">
                 <label for="">Are there any other programs and/or events going on at the same time as the Speaker's program listed above?</label>
                 <label class="cont">Yes
-                <input type="radio" checked="checked" name="other-events">
+                <input type="radio" checked="checked" name="other-events" value="yes">
                 <span class="checkmark"></span>
                 </label>
                 <label class="cont">No
-                <input type="radio" name="other-events">
+                <input type="radio" name="other-events" value="no">
                 <span class="checkmark"></span>
                 </label>
             </div>
@@ -294,12 +294,12 @@
 
             <div class="form-control">
                 <label for="pre-event-marketing">What Pre-Event Marketing is in Place?</label>
-                <input type="text" id="pre-event-marketing">
+                <input type="text" id="pre-event-marketing" name="pre-event-marketing">
             </div>
 
             <div class="button-cont">
-                <button class="previous">Previous</button>
-                <button class="next">Next</button>
+                <a class="button previous">Previous</a>
+                <a class="button next">Next</a>
             </div>
         </div>
 
@@ -311,50 +311,50 @@
 
             <div class="form-control">
                 <label for="senders-name">Your Name</label>
-                <input type="text" id="senders-name">
+                <input type="text" id="senders-name" name="senders-name">
             </div>
             <div class="form-control">
                 <label for="senders-address">Address</label>
-                <input type="text" id="senders-address">
+                <input type="text" id="senders-address" name="senders-address">
             </div>
             <div class="form-control">
                 <label for="senders-city">City</label>
-                <input type="text" id="city">
+                <input type="text" id="city" name="city">
             </div>
             <div class="form-control">
                 <label for="senders-state">State</label>
-                <input type="text" id="senders-state">
+                <input type="text" id="senders-state" name="senders-state">
             </div>
             <div class="form-control">
                 <label for="senders-zip">Zip</label>
-                <input type="text" id="senders-zip">
+                <input type="text" id="senders-zip" name="senders-zip">
             </div>
             <div class="form-control">
                 <label for="senders-phone">Phone</label>
-                <input type="text" id="senders-phone">
+                <input type="text" id="senders-phone" name="senders-phone">
             </div>
             <div class="form-control">
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="text" id="email" name="email">
             </div>
 
             <label for="">Sponsorship Information</label>
             <div class="form-control">
                 <label for="dollar-amount-of-sponsorship-requested">Amount of Sponsorship You Are Requesting?</label>
-                <input type="text" id="dollar-amount-of-sponsorship-requested">
+                <input type="text" id="dollar-amount-of-sponsorship-requested" name="dollar-amount-of-sponsorship-requested">
             </div>
             <div class="form-control">
                 <label for="person-submitting-the-request">Request for Sponsorship Submitted By (Name)</label>
-                <input type="text" id="person-submitting-the-request">
+                <input type="text" id="person-submitting-the-request" name="person-submitting-the-request">
             </div>
             <div class="form-control">
                 <label for="submission-date">Date</label>
-                <input type="date" id="submission-date">
+                <input type="date" id="submission-date" name="submission-date">
             </div>
 
             <div class="button-cont">
-                <button class="previous">Previous</button>
-                <button class="next">Submit</button>
+                <a class="button previous">Previous</a>
+                <button type="submit" class="next">Submit</button>
             </div>
         </div>
 
@@ -369,11 +369,13 @@
 <script>
     const progressBar = document.querySelectorAll(".progressBar li"),
         formGroup = document.querySelectorAll(".form-group"),
-        nextForm = document.querySelectorAll(".next"),
+        nextForm = document.querySelectorAll(".button.next"),
+        submitBtn = document.querySelectorAll("button")
         prevForm = document.querySelectorAll(".previous"); 
 
     let formStepCount = 0; 
 
+    // next links - allows you to go to next form step
     nextForm.forEach((button) => {
         button.addEventListener("click", () => {
             event.preventDefault(); 
@@ -382,10 +384,19 @@
         })
     })
 
+    // previous links - allows you to go to previous form step
     prevForm.forEach((button) => {
         button.addEventListener("click", () => {
             event.preventDefault(); 
             formStepCount--;
+            goToNextForm();
+        })
+    })
+
+    // submit functionality - allows you to submit the form.
+    submitBtn.forEach((button) => {
+        button.addEventListener("click", () => {
+            formStepCount++;
             goToNextForm();
         })
     })
